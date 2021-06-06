@@ -19,8 +19,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'home'])->name('home.index');
 Route::get('/contact', [HomeController::class, 'contact'])->name('home.contact');
-Route::get('/single', AboutController::class)->name('about.contact');
-
+Route::get('/about', AboutController::class)->name('about.contact');
 Route::resource('posts', PostsController::class);
 
 // Route::get('/posts', function () use ($posts) {

@@ -1,3 +1,28 @@
 body {
     background-color: #0d1833;
+    color: #ced3d6;
+}
+
+.navbar {
+    box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%),
+        0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+}
+
+textarea {
+    border: 0 none white;
+    overflow: hidden;
+    padding: 0;
+    outline: none;
+    background-color: #d0d0d0;
+}
+
+@media screen and (max-width: 1080px) {
+    .navbar {
+        flex-direction: column !important;
+    }
+}
+
+a:hover {
+    font-weight: bold;
+    color: #f231a5 !important;
 }

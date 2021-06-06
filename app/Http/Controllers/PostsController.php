@@ -39,7 +39,7 @@ class PostsController extends Controller
         $validated = $request->validated();
         $post = BlogPost::create($validated);
         $request->session()->flash('status', 'The blog post was created');
-        return redirect()->route('posts.show', ['post' => $post->id]);
+        return redirect()->route('posts.index');
     }
 
     /**
@@ -78,8 +78,8 @@ class PostsController extends Controller
         $validated = $request->validated();
         $post->fill($validated);
         $post->save();
-        $request->session()->flash('status', 'The blog post was created');
-        return redirect()->route('posts.show', ['post' => $post->id]);
+        $request->session()->flash('status', 'The blog post was updated');
+        return redirect()->route('posts.index');
     }
 
     /**
