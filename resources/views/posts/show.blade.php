@@ -4,7 +4,9 @@
 
 @section('content')
 
-<h1>{{ $post['title'] }}</h1>
-<p>{{ $post['content'] }}</p>
+<div class="card m-2 text-primary font-weight-bold">
+    <h1 class="m-2">{{ $post['title'] }}</h1>
+    <p class="m-2">{{ $post['content'] }}</p>
+</div>
 
 @endsection
