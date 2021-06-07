@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
     <script src="{{ mix('js/app.js') }}" defer></script>
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
-    <title>Laravel App - @yield('title')</title>
+    <title>@yield('title')</title>
 </head>
 <body onload="init();">
     <nav class="navbar d-flex flex-row">

@@ -4,6 +4,6 @@
 
 @section('content')
 <div class="m-2">
-    <h3>About</h3>
+    <h2>About</h2>
 </div>
 @endsection
